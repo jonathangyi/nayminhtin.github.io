@@ -1,4 +1,4 @@
-# nayminhtin.github.io
+# Nay Min Htin.github.io
 Portfolio Repository
 Welcome to my personal portfolio! I’m a final year undergraduate student learning BSC(IT) at Stamford International University, Thailand.
 
