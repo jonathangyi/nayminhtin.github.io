@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-weight: 700;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 400;
+            opacity: 0.85;
+        }
+
+        nav a:hover {
+            opacity: 1;
+        }
+
+        .hero {
+            height: calc(100vh - 120px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 35px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 14px 28px;
+            margin: 0 10px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #ffffff;
+            color: #203a43;
+        }
+
+        .btn-primary:hover {
+            background: #e6e6e6;
+        }
+
+        .btn-secondary {
+            border: 2px solid #ffffff;
+            color: #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background: #ffffff;
+            color: #203a43;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>YourName</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hi, I’m Your Name 👋</h1>
+        <p>
+            A student passionate about technology, data, and building cool things.
+            I enjoy working on web apps, AI projects, and problem solving.
+        </p>
+        <div class="buttons">
+            <a href="#" class="btn-primary">View Projects</a>
+            <a href="#" class="btn-secondary">Contact Me</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Your Name. Built with GitHub Pages
+</footer>
+
+</body>
+</html>
