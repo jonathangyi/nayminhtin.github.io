@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nay Min Htin | Portfolio</title>
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
+        /* ===============================
+           RESET & BASE
+        ================================ */
         * {
             margin: 0;
             padding: 0;
@@ -17,8 +23,16 @@
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             color: #ffffff;
             min-height: 100vh;
+            line-height: 1.6;
         }
 
+        a {
+            color: inherit;
+        }
+
+        /* ===============================
+           HEADER
+        ================================ */
         header {
             padding: 40px 60px;
             display: flex;
@@ -28,20 +42,23 @@
 
         header h2 {
             font-weight: 700;
+            font-size: 1.4rem;
         }
 
         nav a {
-            color: #ffffff;
             margin-left: 25px;
             text-decoration: none;
-            font-weight: 400;
             opacity: 0.85;
+            font-weight: 400;
         }
 
         nav a:hover {
             opacity: 1;
         }
 
+        /* ===============================
+           HERO
+        ================================ */
         .hero {
             height: calc(100vh - 120px);
             display: flex;
@@ -52,7 +69,7 @@
         }
 
         .hero-content {
-            max-width: 700px;
+            max-width: 750px;
         }
 
         .hero h1 {
@@ -69,7 +86,7 @@
 
         .buttons a {
             display: inline-block;
-            padding: 14px 28px;
+            padding: 14px 30px;
             margin: 0 10px;
             border-radius: 30px;
             text-decoration: none;
@@ -88,7 +105,6 @@
 
         .btn-secondary {
             border: 2px solid #ffffff;
-            color: #ffffff;
         }
 
         .btn-secondary:hover {
@@ -96,6 +112,112 @@
             color: #203a43;
         }
 
+        /* ===============================
+           SECTIONS (GLOBAL)
+        ================================ */
+        section {
+            padding: 80px 60px;
+        }
+
+        section h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        section p {
+            max-width: 900px;
+            margin: 0 auto 20px auto;
+            font-size: 1.05rem;
+            opacity: 0.9;
+        }
+
+        /* ===============================
+           ABOUT
+        ================================ */
+        #about {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        /* ===============================
+           SKILLS
+        ================================ */
+        #skills ul {
+            max-width: 900px;
+            margin: 0 auto;
+            list-style: none;
+        }
+
+        #skills li {
+            padding: 14px 20px;
+            margin-bottom: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        /* ===============================
+           PROJECTS
+        ================================ */
+        #projects {
+            background: rgba(0, 0, 0, 0.15);
+        }
+
+        .project {
+            max-width: 900px;
+            margin: 0 auto 25px auto;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 14px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .project h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        /* ===============================
+           EXPERIENCE
+        ================================ */
+        #experience ul {
+            max-width: 900px;
+            margin: 0 auto;
+            list-style: none;
+        }
+
+        #experience li {
+            padding: 14px 20px;
+            margin-bottom: 12px;
+            border-left: 4px solid #ffffff;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+        }
+
+        /* ===============================
+           CONTACT
+        ================================ */
+        #contact {
+            text-align: center;
+        }
+
+        #contact a {
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===============================
+           FOOTER
+        ================================ */
         footer {
             text-align: center;
             padding: 20px;
@@ -103,22 +225,39 @@
             opacity: 0.6;
         }
 
+        /* ===============================
+           RESPONSIVE
+        ================================ */
         @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 12px;
+            }
+
             .hero h1 {
                 font-size: 2.3rem;
+            }
+
+            section {
+                padding: 60px 25px;
             }
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h2>YourName</h2>
+    <h2>Nay Min Htin</h2>
     <nav>
         <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
@@ -126,95 +265,79 @@
     <div class="hero-content">
         <h1>Hi, I’m Nay Min Htin 👋</h1>
         <p>
-            A technology-focused student with strong interests in Data Science, AI, Software Testing, and Cybersecurity. I enjoy building practical projects and learning by doing.
+            A technology-focused student with strong interests in Data Science, AI,
+            Software Testing, and Cybersecurity. I enjoy building practical projects
+            and learning by doing.
         </p>
-
         <div class="buttons">
-            <a href="#" class="btn-primary">View Projects</a>
-            <a href="#" class="btn-secondary">Contact Me</a>
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-secondary">Contact Me</a>
         </div>
     </div>
 </section>
 
 <section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a student with hands-on experience in data analysis, machine learning,
-    web-based applications, and system testing. I enjoy solving real-world problems
-    using technology and continuously improving my technical and analytical skills.
-  </p>
-  <p>
-    I have worked on projects involving stock price prediction, fraud detection,
-    fire detection systems using IoT sensors, and automated testing for web applications.
-  </p>
+    <h2>About Me</h2>
+    <p>
+        I am a student with hands-on experience in data analysis, machine learning,
+        web-based applications, and system testing.
+    </p>
+    <p>
+        I have worked on projects involving stock price prediction, fraud detection,
+        IoT fire detection systems, and automated testing for web applications.
+    </p>
 </section>
 
 <section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li><strong>Programming:</strong> Python, SQL, Java, JavaScript</li>
-    <li><strong>Data & AI:</strong> Pandas, NumPy, Scikit-learn, XGBoost, LSTM</li>
-    <li><strong>Web:</strong> HTML, CSS, Streamlit</li>
-    <li><strong>Testing:</strong> Manual Testing, Test Cases, Regression Testing</li>
-    <li><strong>Tools:</strong> Git, GitHub, VS Code, Wireshark</li>
-    <li><strong>Cyber:</strong> Kali Linux (Beginner), Network Analysis</li>
-  </ul>
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Programming:</strong> Python, SQL, Java, JavaScript</li>
+        <li><strong>Data & AI:</strong> Pandas, NumPy, Scikit-learn, XGBoost, LSTM</li>
+        <li><strong>Web:</strong> HTML, CSS, Streamlit</li>
+        <li><strong>Testing:</strong> Manual Testing, Test Cases, Regression Testing</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, Wireshark</li>
+        <li><strong>Cyber:</strong> Kali Linux (Beginner), Network Analysis</li>
+    </ul>
 </section>
 
 <section id="projects">
-  <h2>Projects</h2>
+    <h2>Projects</h2>
 
-  <div class="project">
-    <h3>📈 Multi-Stock Price Prediction App</h3>
-    <p>
-      Built a stock forecasting application using LSTM and ensemble models.
-      Integrated real-time stock data and deployed the app using Streamlit.
-    </p>
-  </div>
+    <div class="project">
+        <h3>📈 Multi-Stock Price Prediction App</h3>
+        <p>
+            Built a stock forecasting application using LSTM and ensemble models.
+            Integrated real-time stock data and deployed with Streamlit.
+        </p>
+    </div>
 
-  <div class="project">
-    <h3>🔥 IoT Fire Detection System</h3>
-    <p>
-      Developed a fire detection system using ESP32-CAM, MQ-2, DHT11,
-      sound sensor, and Blynk dashboard for real-time alerts.
-    </p>
-  </div>
+    <div class="project">
+        <h3>🔥 IoT Fire Detection System</h3>
+        <p>
+            Developed a fire detection system using ESP32-CAM, MQ-2, DHT11,
+            sound sensor, and Blynk dashboard.
+        </p>
+    </div>
 
-  <div class="project">
-    <h3>🧪 Online Bookstore Testing Project</h3>
-    <p>
-      Designed test plans, test cases, and performed manual and automated testing
-      for a demo online bookstore web application.
-    </p>
-  </div>
+    <div class="project">
+        <h3>🧪 Online Bookstore Testing Project</h3>
+        <p>
+            Designed test plans, test cases, and performed manual and automated
+            testing for a demo web application.
+        </p>
+    </div>
 
-  <div class="project">
-    <h3>🛡️ AI-Powered Fraud Detection (Hackathon)</h3>
-    <p>
-      Worked on transaction analysis and user behavior profiling
-      for fraud detection using machine learning concepts.
-    </p>
-  </div>
+    <div class="project">
+        <h3>🛡️ AI-Powered Fraud Detection (Hackathon)</h3>
+        <p>
+            Worked on transaction analysis and user behavior profiling
+            using machine learning techniques.
+        </p>
+    </div>
 </section>
 
 <section id="experience">
-  <h2>Experience & Learning</h2>
-  <ul>
-    <li>Prepared for Quality Assurance and Digitalization Engineering internships</li>
-    <li>Hands-on SQL querying and data analysis practice</li>
-    <li>Network traffic analysis using Wireshark</li>
-    <li>Continuous learning in AI, cybersecurity, and software testing</li>
-  </ul>
-</section>
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: laputacity1@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/jonathangyi" target="_blank" rel="noopener">github.com/jonathangyi</a></p>
-</section>
-
-<footer>
-  <p>© 2026 Nay Min Htin | Built with GitHub Pages</p>
-</footer>
-
-</body>
-</html>
+    <h2>Experience & Learning</h2>
+    <ul>
+        <li>Prepared for Quality Assurance and Digitalization Engineering internships</li>
+        <li>Hand
