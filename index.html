@@ -3,250 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nay Min Htin | Portfolio</title>
+    <title>Nay Min Htin Portfolio</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        /* ===============================
-           RESET & BASE
-        ================================ */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: #ffffff;
-            min-height: 100vh;
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-        }
-
-        /* ===============================
-           HEADER
-        ================================ */
-        header {
-            padding: 40px 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h2 {
-            font-weight: 700;
-            font-size: 1.4rem;
-        }
-
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            opacity: 0.85;
-            font-weight: 400;
-        }
-
-        nav a:hover {
-            opacity: 1;
-        }
-
-        /* ===============================
-           HERO
-        ================================ */
-        .hero {
-            height: calc(100vh - 120px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .hero-content {
-            max-width: 750px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 35px;
-        }
-
-        .buttons a {
-            display: inline-block;
-            padding: 14px 30px;
-            margin: 0 10px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .btn-primary {
-            background: #ffffff;
-            color: #203a43;
-        }
-
-        .btn-primary:hover {
-            background: #e6e6e6;
-        }
-
-        .btn-secondary {
-            border: 2px solid #ffffff;
-        }
-
-        .btn-secondary:hover {
-            background: #ffffff;
-            color: #203a43;
-        }
-
-        /* ===============================
-           SECTIONS (GLOBAL)
-        ================================ */
-        section {
-            padding: 80px 60px;
-        }
-
-        section h2 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 25px;
-            text-align: center;
-        }
-
-        section p {
-            max-width: 900px;
-            margin: 0 auto 20px auto;
-            font-size: 1.05rem;
-            opacity: 0.9;
-        }
-
-        /* ===============================
-           ABOUT
-        ================================ */
-        #about {
-            background: rgba(255, 255, 255, 0.03);
-        }
-
-        /* ===============================
-           SKILLS
-        ================================ */
-        #skills ul {
-            max-width: 900px;
-            margin: 0 auto;
-            list-style: none;
-        }
-
-        #skills li {
-            padding: 14px 20px;
-            margin-bottom: 12px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-        }
-
-        /* ===============================
-           PROJECTS
-        ================================ */
-        #projects {
-            background: rgba(0, 0, 0, 0.15);
-        }
-
-        .project {
-            max-width: 900px;
-            margin: 0 auto 25px auto;
-            padding: 25px;
-            background: rgba(255, 255, 255, 0.06);
-            border-radius: 14px;
-            transition: 0.3s;
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .project h3 {
-            font-size: 1.25rem;
-            margin-bottom: 10px;
-        }
-
-        /* ===============================
-           EXPERIENCE
-        ================================ */
-        #experience ul {
-            max-width: 900px;
-            margin: 0 auto;
-            list-style: none;
-        }
-
-        #experience li {
-            padding: 14px 20px;
-            margin-bottom: 12px;
-            border-left: 4px solid #ffffff;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 6px;
-        }
-
-        /* ===============================
-           CONTACT
-        ================================ */
-        #contact {
-            text-align: center;
-        }
-
-        #contact a {
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        #contact a:hover {
-            text-decoration: underline;
-        }
-
-        /* ===============================
-           FOOTER
-        ================================ */
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            opacity: 0.6;
-        }
-
-        /* ===============================
-           RESPONSIVE
-        ================================ */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 12px;
-            }
-
-            .hero h1 {
-                font-size: 2.3rem;
-            }
-
-            section {
-                padding: 60px 25px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -340,4 +101,26 @@
     <h2>Experience & Learning</h2>
     <ul>
         <li>Prepared for Quality Assurance and Digitalization Engineering internships</li>
-        <li>Hand
+        <li>Hands-on SQL querying and data analysis practice</li>
+        <li>Network traffic analysis using Wireshark</li>
+        <li>Continuous learning in AI, cybersecurity, and software testing</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: laputacity1@gmail.com</p>
+    <p>
+        GitHub:
+        <a href="https://github.com/jonathangyi" target="_blank" rel="noopener">
+            github.com/jonathangyi
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Nay Min Htin | Built with GitHub Pages</p>
+</footer>
+
+</body>
+</html>
